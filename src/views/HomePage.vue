@@ -28,12 +28,22 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 <style scoped>
 #container {
   text-align: center;
-  
+
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+h1,
+h2,
+p {
+  color: white;
+}
+
+ion-input {
+  --color: white;
 }
 
 #container strong {
@@ -44,9 +54,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 #container p {
   font-size: 16px;
   line-height: 22px;
-  
-  color: #8c8c8c;
-  
+
   margin: 0;
 }
 
