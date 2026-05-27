@@ -43,13 +43,23 @@ const filme = filmes.find(
   <IonPage>
     <IonContent class="ion-padding fundo">
 
-      <h1>{{ filme?.titulo }}</h1>
+      <div v-if="filme">
 
-      <h2>{{ filme?.ano }}</h2>
+        <h1>{{ filme.titulo }}</h1>
 
-      <p>{{ filme?.descricao }}</p>
+        <h2>{{ filme.ano }}</h2>
 
-      <p>Faixa etária: {{ filme?.faixa }}</p>
+        <p>{{ filme.descricao }}</p>
+
+        <p>Faixa etária: {{ filme.faixa }}</p>
+
+      </div>
+
+      <div v-else>
+
+        <h1>Filme não encontrado</h1>
+
+      </div>
 
       <IonButton
         expand="block"
